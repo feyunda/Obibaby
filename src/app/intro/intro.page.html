@@ -1,14 +1,63 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>intro</ion-title>
-  </ion-toolbar>
-</ion-header>
+<!DOCTYPE html>
+asdffgadsdasgdasgadsgadsgads
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Centro de Control</title>
+  
+  <script src="app.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
 
-<ion-content padding>
-  <button ion-button block
-      (click) = "ir_home()">
-    Start
-    </button>
+    <ion-app>
+        <ion-header>
+          </ion-header>
+          
+          <ion-content>
+              <div class = "header">
+                  <p class="titulo" >Centro de Control</p>
+              </div>
 
 
-</ion-content>
+              <div class="description">
+                Este es el centro de control donde podrás ver el estado de la habitación del bebé.
+              </div>
+
+
+              <div class="cuadrado" id = "temp">
+                  <p class="texto" id="superior">
+                    Temperatura<br>{{ medicion.temperatura }}
+                  </p>
+
+
+                  <p class="texto" id="inferior">Humedad
+                      <br>{{ medicion.humedad }}
+                  </p>
+      
+              </div>
+
+
+              <div class="cuadrado" id = "aire">
+                <p class="texto" id="superior">Calidad del Aire</p>
+              </div>
+
+
+             <div class="cuadrado" id = "mov">
+               <p class="texto" id="superior">Movimiento</p>
+             </div>
+
+              
+             <div class="cuadrado" id = "sonido">
+                <p class="texto" id="superior">Sonido</p>
+              </div>  
+
+    
+           </ion-content>
+    
+    
+    </ion-app> 
