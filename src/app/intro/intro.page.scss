@@ -68,6 +68,14 @@
         left: 199px;
         top: 412px;    
      }
+    p.ion-text-center{
+        font-family: Lato;
+        font-style: thin;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
     
     p.texto{
         position: absolute;
@@ -79,16 +87,11 @@
         color: #FFFFFF;
     }
     
-    #superior{
-        left: 5%;
-        top: 0%;
-    }
-    
     #inferior{
-        left: 25%;
-       top:70px;
+        left: 20%;
+       top:40%;
+    
     }
-
     .med{
         position: absolute;
         font-family: Heebo;
@@ -99,33 +102,30 @@
     }
     #tempMed{
         font-size: 30px;
-        left: 40%;
+        left: 30%;
         top: 15%;
     }
 
     #humMed{
         font-size: 30px;
-        left: 40%;
+        left: 36%;
         top: 50%;
     }
 
     #aireMed{
         font-size: 50px;
         left:32%;
-        top: 20%;
+        top: 15%;
     }
 
     #sonidoMed{
         font-size: 50px;
         left:32%;
-        top: 20%;
+        top: 15%;
     }
 
     #movMed{
         font-size: 50px;
-        left:20%;
-        top: 20%;
+        left:22%;
+        top: 15%;
     }
-
-   
-    

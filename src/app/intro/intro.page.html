@@ -30,28 +30,28 @@
 
               <div class="cuadrado"  id = "temp">
                   
-                  <p class="texto" id="superior">
+                  <p class="texto" id="superior" class="ion-text-center" >
                     Temperatura 
                   </p>
                   <p class = "med" id= "tempMed">  
-                    {{ medicion.temperatura }}
+                    {{ medicion.temperatura }}°C
                   </p>
 
                   <p class="texto" id="inferior">
                    Humedad
                   </p>
                   <p class = "med" id= "humMed">  
-                    {{ medicion.humedad }}
+                    {{ medicion.humedad }} %
                   </p>
     
               </div>
 
 
-              <div class="cuadrado" id = "aire">
-                <p class="texto" id="superior">
+              <div class="cuadrado" id = "aire" >
+                <p class="texto" id="superior" class="ion-text-center">
                   Calidad del aire
                 </p>
-                <p class = "med" id= "aireMed">  
+                <p class = "med" id= "aireMed"  >  
                   {{ medicion.aire }}
                 </p>
                 </div>
@@ -59,10 +59,10 @@
 
 
              <div class="cuadrado" id = "mov">
-              <p class="texto" id="superior">
+              <p  class = "texto" id="superior" class="ion-text-center" >
                  Movimiento
                 </p>
-              <p class = "med" id= "movMed">  
+              <p class = "med" id= "movMed" >  
                 {{ medicion.movimiento }}
               </p>
      
@@ -70,9 +70,9 @@
 
               
              <div class="cuadrado" id = "sonido">
-                <p class="texto" id="superior">
-                  sonido
-                </p>
+                <p class = "texto"  id="superior" class="ion-text-center">
+                  Sonido
+                </p> 
                 <p class = "med" id= "sonidoMed">  
                   {{ medicion.sonido }}
                 </p>
