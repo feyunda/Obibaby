@@ -1,20 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-//import {NavController}  from 'ionic-angular';
+import { Component } from '@angular/core';
+import { Medicion } from '../modelos/medicion';
+import {NavController, NavParams} from '@ionic/angular';
+
 
 @Component({
   selector: 'app-intro',
-  templateUrl: './intro.page.html',
-  styleUrls: ['./intro.page.scss'],
+  templateUrl: 'intro.page.html',
+  styleUrls: ['intro.page.scss'],
 })
-export class IntroPage implements OnInit {
+export class IntroPage {
 
-  constructor(public navCtrl: NavController) {
-
-   }
-
-   ir_home(){
-
-    this.navCtrl.push("HomePage")
+    public medicion: Medicion;
+  constructor() {
+    this.medicion = new Medicion(4, 30, true, 20);
   }
 
+
+
 }
+
+
+

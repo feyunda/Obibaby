@@ -1,18 +1,16 @@
-import { Component } from '@angular/core';
-import { Medicion } from '../modelos/medicion';
+import { Component, OnInit } from '@angular/core';
+import {NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
 })
-export class HomePage {
+export class HomePage{ // implements OnInit {
 
-    public medicion: Medicion;
-  constructor() {
-    this.medicion = new Medicion(4, 30, true, 20);
-  }
+  constructor(public navCtrl: NavController) {
 
+   }
 
 
 }
