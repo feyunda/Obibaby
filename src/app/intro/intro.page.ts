@@ -12,7 +12,7 @@ export class IntroPage {
 
     public medicion: Medicion;
   constructor() {
-    this.medicion = new Medicion(4, 30, true, 20);
+    this.medicion = new Medicion(4, 30, true, 20, 39);
   }
 
 
