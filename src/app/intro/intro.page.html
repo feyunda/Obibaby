@@ -54,15 +54,15 @@ Obibaby/src/app/intro/intro.page.html
                   <p class="texto" id="superior" class="ion-text-center" >
                     Temperatura 
                   </p>
-                  <p class = "med" id= "tempMed">  
-                    {{ medicion.temperatura }}°C
+                  <p class = "med" id= "tempMed" *ngIf="medicion">  
+                    {{ medicion.Temp }}°C
                   </p>
 
                   <p class="texto" id="inferior">
                    Humedad
                   </p>
-                  <p class = "med" id= "humMed">  
-                    {{ medicion.humedad }} %
+                  <p class = "med" id= "humMed" *ngIf="medicion">  
+                    {{ medicion.Hume }} %
                   </p>
     
               </div>
@@ -72,8 +72,8 @@ Obibaby/src/app/intro/intro.page.html
                 <p class="texto" id="superior" class="ion-text-center">
                   Calidad del aire
                 </p>
-                <p class = "med" id= "aireMed"  >  
-                  {{ medicion.aire }}
+                <p class = "med" id= "aireMed"  *ngIf="medicion">  
+                  {{ medicion.Aire }}
                 </p>
                 </div>
               
@@ -83,8 +83,8 @@ Obibaby/src/app/intro/intro.page.html
               <p  class = "texto" id="superior" class="ion-text-center" >
                  Movimiento
                 </p>
-              <p class = "med" id= "movMed" >  
-                {{ medicion.movimiento }}
+              <p class = "med" id= "movMed" *ngIf="medicion">  
+                {{ medicion.Mov }}
               </p>
      
              </div>
@@ -94,8 +94,8 @@ Obibaby/src/app/intro/intro.page.html
                 <p class = "texto"  id="superior" class="ion-text-center">
                   Sonido
                 </p> 
-                <p class = "med" id= "sonidoMed">  
-                  {{ medicion.sonido }}
+                <p class = "med" id= "sonidoMed" *ngIf="medicion">  
+                  {{ medicion.Ruido }}
                 </p>
               </div>  
 

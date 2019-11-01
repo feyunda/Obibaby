@@ -1,10 +1,12 @@
 export class Medicion {
     constructor(
-        public humedad: number,
-        public temperatura: number,
-        public movimiento: boolean,
-        public sonido: number,
-        public aire: number
+        public Temp: number,
+        public Hume: number,
+        public Mov: number,
+        public Ruido: number,
+        public Aire: number,
+        public HoraFecha: string,
+        public Alert: string,
         ) {}
 }
 

@@ -11,12 +11,24 @@ import {MedicionService} from './../services/medicion.service';
 export class IntroPage {
     public medicion: Medicion;
   constructor(private mediServices: MedicionService) {
-    this.medicion = new Medicion(4, 30, true, 20, 39);
+    (<any>this.medicion) = {};
+    }
+
+  setDatos() {
+    this.mediServices.obtenerMediciones().subscribe(datosS => 
+      {
+        console.log(datosS);
+        datosS = (<any>datosS)[0];
+        // this.medicion = datosS;
+        this.medicion = new Medicion(datosS.Temp, datosS.Hume, datosS.Mov, datosS.Ruido, datosS.Aire, datosS.HoraFecha, datosS.Alert);
+
+        // this.datosS = datosS;
+      });
+    // tslint:disable-next-line: max-line-length
   }
 
-  datosS: Medicion;
-  setDatos() {
-    this.mediServices.obtenerMediciones().subscribe(datosS => this.datosS = datosS);
+  ionViewDidEnter() {
+    this.setDatos();
   }
 
 }
